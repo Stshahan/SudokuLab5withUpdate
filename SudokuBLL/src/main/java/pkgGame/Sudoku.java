@@ -191,6 +191,9 @@ public class Sudoku extends LatinSquare implements Serializable {
 		hsCellRange.removeAll(hsUsedValues);
 		return hsCellRange;
 	}
+	
+	
+	
 
 	/**
 	 * getPuzzle - return the Sudoku puzzle
