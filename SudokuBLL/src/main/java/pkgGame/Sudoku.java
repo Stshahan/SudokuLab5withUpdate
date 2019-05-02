@@ -60,6 +60,9 @@ public class Sudoku extends LatinSquare implements Serializable {
 	 * @param iSize- length of the width/height of the puzzle
 	 * @throws Exception if the iSize given doesn't have a whole number square root
 	 */
+	private pkgEnum.eGameDifficulty eGameDifficulty;
+	
+	
 	public Sudoku(int iSize) throws Exception {
 
 		this.iSize = iSize;
@@ -110,6 +113,10 @@ public class Sudoku extends LatinSquare implements Serializable {
 	 * @version 1.5
 	 * @since Lab #5
 	 */
+	
+	public Sudoku() {
+		this.eGameDifficulty=pkgEnum.eGameDifficulty.EASY;
+	}
 	public int getiSize() {
 		return iSize;
 	}
@@ -575,6 +582,15 @@ public class Sudoku extends LatinSquare implements Serializable {
 		}
 	}
 	
+	/*private boolean isDifficultyMet(int iPossibleValue) {
+		if(pkgEnum.eGameDifficulty.get(iPossibleValue)==eGameDifficulty) {
+			return true;
+		}
+		else{
+			return false;
+		}
+	}
+	*/
 		
 	/**
 	 * Cell - private class that handles possible remaining values
