@@ -5,7 +5,7 @@ EASY, MEDIUM, HARD;
 
 private int iDifficulty;
 
-private static java.util.Map<java.lang.Integer,eGameDifficulty> lookup;
+private static final java.util.Map<java.lang.Integer,eGameDifficulty> lookup;
 
 
 
@@ -15,7 +15,16 @@ private static java.util.Map<java.lang.Integer,eGameDifficulty> lookup;
 
 //static eGameDifficulty valueOf(java.lang.String name) {}
 
-//static eGameDifficulty[] values() {}
+public static eGameDifficulty[] values() {
+	
+	eGameDifficulty[] diffConstants;
+	
+	for (eGameDifficulty c : eGameDifficulty.values()) {
+		//figure out how to add the enum constants to a regular array.
+	}
+	    
+		
+}
 
 }
 
