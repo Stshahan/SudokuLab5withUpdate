@@ -9,11 +9,14 @@ private static final java.util.Map<java.lang.Integer,eGameDifficulty> lookup;
 
 
 
-//static eGameDifficulty get(int iDifficulty) {}
+public static eGameDifficulty get(int iDifficulty) {
+	//return the difficulty associated with the parameter.
+}
 
-//int	getiDifficulty() {}
-
-//static eGameDifficulty valueOf(java.lang.String name) {}
+public int	getiDifficulty() {
+	return iDifficulty;
+}
+static eGameDifficulty valueOf(java.lang.String name) {}
 
 public static eGameDifficulty[] values() {
 	
